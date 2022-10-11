@@ -1,21 +1,45 @@
 # Aula de POO - Herança com Java
 
-## Getting Started
+## Informações sobre os tipos de funcionários
+**Professor**
+- nome
+- matricula
+- titulacao
+- salario
+- eixo
+- *getValorRt()*
+- *getSalarioTotal()*
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Técnico**
+- nome
+- matricula
+- titulacao
+- salario
+- departamento
+- *getValorRt()*
+- *getSalarioTotal()*
 
-## Folder Structure
+**Diretor**
+- nome
+- matricula
+- titulacao
+- salario
+- funcao
+- gratificacao
+- *getValorRt()*
+- *getSalarioTotal()*
 
-The workspace contains two folders by default, where:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Calculo da RT
+- Professor: Mestre 50% do salário, Doutor 100% do salário, outros 0%;
+- Tércnico: Mestre 25% do salário, Doutor 75% do salário, outros 0%;
+- Diretor: Mestre 50% do salário, Doutor 50% do salário, outros 0%;
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Calculo do Salário total:
+- Professor: Salário + RT;
+- Tércnico: Salário + RT;
+- Diretor: Salário + RT + Gratificação;
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
-
+## Atividade
+Implementar a classe Diretor conforme as informações acima.
